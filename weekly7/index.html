@@ -1,0 +1,43 @@
+<!-- 
+ 구구단 샘플코드 
+<script>
+  let gugudan = () => {
+    let num = Number(prompt("구구단:"));
+    document.write(
+      `<font style='color:green; font-size:20pt;'>**${num}**</font><br>`
+    );
+    for (let i = 1; i <= 9; i++) {
+      document.write(`${num} * ${i} = ${num * i}<br>`);
+    }
+  };
+
+  gugudan();
+</script> -->
+
+<!-- callback ppt 평가문제   -->
+<script>
+  let myFunction = (a, b, callback) => {
+    let sum = 0;
+    for (let i = a; i <= b; i++) {
+      document.write(
+        `<font style='color:blue; font-size:20pt; text-align:center; padding:4px;'>${i}</font>`
+      );
+      sum += i;
+    }
+    callback(sum);
+  };
+  myFunction(1, 10, function (res) {
+    document.write(
+      `<br><font style='color:white; font-size:20pt; background-color:green;'>1-10까지 합: ${res}</font>`
+    );
+  });
+</script>
+
+<!-- let add = function (a, b, callback) {
+  let result = a + b;
+  callback(result);
+};
+
+add(10, 20, function (res) {
+  console.log("합계:" + res);
+}); -->

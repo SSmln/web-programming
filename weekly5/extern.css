@@ -1,0 +1,10 @@
+h3 {
+  font-style: italic;
+  font-size: 30pt;
+}
+p {
+  font-family: "굴림";
+  font-size: 20pt;
+  color: blue;
+  text-decoration: underline;
+}

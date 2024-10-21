@@ -1,0 +1,17 @@
+<script>
+  let myfunction = (a, b, callback) => {
+    let sum = 0;
+    for (let i = a; i <= b; i++) {
+      document.write(
+        `<font style='color:blue; font-size:20pt; text-align:center; padding:4px;'>${i}</font>`
+      );
+      sum += i;
+    }
+    callback(sum);
+  };
+  myfunction(1, 10, function (res) {
+    document.write(
+      `<br><font style='color:white; font-size:20pt; background-color:green;'>1-10까지 합: ${res}</font>`
+    );
+  });
+</script>

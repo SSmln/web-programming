@@ -1,0 +1,48 @@
+<script>
+  let date = new Date();
+  let thismonth = date.getMonth() + 1;
+  // let thismonth = 12;
+  switch (thismonth) {
+    case 12:
+    case 1:
+    case 2:
+      document.write(
+        `<h1 style="color: blue;">지금은 ${thismonth}월은 입니다. 
+  <br> 계절은 
+  <span style='background-color:green; color:white; font-family: 궁서;'>겨울(winter) </span> 입니다. 
+  </h1>`
+      );
+      break;
+    case 3:
+    case 4:
+    case 5:
+      document.write(
+        `<h1 style="color: blue;">지금은 ${thismonth}월은 입니다. 
+  <br> 계절은 
+  <span style='background-color:green; color:white; font-family: 궁서;'>봄(spring) </span> 입니다. 
+  </h1>`
+      );
+
+      break;
+    case 6:
+    case 7:
+    case 8:
+      document.write(
+        `<h1 style="color: blue;">지금은 ${thismonth}월은 입니다. 
+  <br> 계절은 
+  <span style='background-color:green; color:white; font-family: 궁서;'>여름(surmmer) </span> 입니다. 
+  </h1>`
+      );
+
+      break;
+    case 9:
+    case 10:
+    case 11:
+      document.write(
+        `<h1 style="color: blue;">지금은 ${thismonth}월은 입니다. 
+  <br> 계절은 
+  <span style='background-color:green; color:white; font-family: 궁서;'>가을(fall) </span> 입니다. 
+  </h1>`
+      );
+  }
+</script>
