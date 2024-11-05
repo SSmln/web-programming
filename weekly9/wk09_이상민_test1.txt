@@ -1,0 +1,28 @@
+class Cookie {
+  constructor(product, unit, qty) {
+    this.product = product;
+    this.unit = unit;
+    this.qty = qty;
+  }
+  print() {
+    console.log(
+      `      제품명: ${this.product} 
+      단가: ${this.unit}
+      수량: ${this.qty} 
+      총액: ${this.unit * this.qty}`
+    );
+  }
+}
+let aa = [
+  new Cookie("초코파이", 2400, 10),
+  new Cookie("새우깡", 1800, 5),
+  new Cookie("칸쵸", 1500, 12),
+  new Cookie("에이스", 1500, 12),
+  new Cookie("맛동산", 1500, 3),
+  new Cookie("오징어땅콩", 1500, 7),
+];
+
+for (let i of aa) {
+  i.print();
+  console.log();
+}
